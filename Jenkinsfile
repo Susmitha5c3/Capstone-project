@@ -12,7 +12,6 @@ pipeline {
            stage('Lint HTML') {
                steps {
                    sh 'tidy -q -e *.html'
-		   sh 'sudo usermod -a -G docker jenkins'
                    sh '''sudo docker run --rm -i hadolint/hadolint < Dockerfile'''
                }
           }
