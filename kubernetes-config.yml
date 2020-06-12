@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: projectcapsone-pod
-        image: a3ajagbe/kubernetes-clusters-demo:devopsprojectpapsone
+        image: susmithasusmi13/kubernetes-clusters-demo:devopsprojectpapsone
         imagePullPolicy: Always
         ports:
         - containerPort: 80
