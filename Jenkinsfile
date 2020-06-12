@@ -12,7 +12,7 @@ pipeline {
            stage('Lint HTML') {
                steps {
                    sh 'tidy -q -e *.html'
-                   sh '''sudo docker run --rm -i hadolint/hadolint < Dockerfile'''
+                   sh '''docker run --rm -i hadolint/hadolint < Dockerfile'''
                }
           }
 
