@@ -1,5 +1,5 @@
-docker build --tag a3ajagbe/kubernetes-clusters-demo:devopsprojectpapsone .
+docker build --tag susmithasusmi13/kubernetes-clusters-demo:devopsprojectpapsone .
 
 docker login
 
-docker push a3ajagbe/kubernetes-clusters-demo:devopsprojectpapsone
+docker push susmithasusmi13/kubernetes-clusters-demo:devopsprojectpapsone

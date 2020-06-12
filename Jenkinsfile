@@ -20,7 +20,7 @@ pipeline {
           stage('Build image') {
             steps {
                 script {
-                    dockerImage = docker.build('a3ajagbe/kubernetes-clusters-demo:lastest')
+                    dockerImage = docker.build('susmithasusmi13/kubernetes-clusters-demo:lastest')
                     docker.withRegistry('', 'docker') {
                         dockerImage.push()
                     }
